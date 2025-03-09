@@ -10,6 +10,7 @@ Your task is to fetch user data from the backend server and display it as user c
 
 1. **Fetch User Data**:
 2. **Display User Cards**:
+   - Cards should be added dynamically, meaning there could be random number of user data and for each user there will be a card.
    - Card should display following user data: name, email, company name.
 
 ### Additional Requirements
