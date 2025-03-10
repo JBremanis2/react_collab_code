@@ -1,6 +1,6 @@
 # Vite + React Frontend
 
-This project is a simple Vite + React frontend application.
+This project is a simple Vite + React frontend app with backend built on NodeJS.
 
 ## Student Task
 
