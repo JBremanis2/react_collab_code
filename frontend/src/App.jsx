@@ -1,7 +1,24 @@
+// @ts-nocheck
+import React from "react";
+import { useEffect, useState } from "react";
+import UserCard from "./components/UserCard";
 
 function App() {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    fetchUsers();
+  }, []);
+
+  const fetchUsers = async() => {
+    const response = await fetch('http://localhost:3000/api/users');
+    setUsers(await response.json())
+  }
+
   return (
-  <h1>Hello World!</h1>
+    <ul>
+      {users.map((user) => <UserCard key={user.id} user={user}/>)}
+    </ul>
   );
 }
 
