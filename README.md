@@ -31,11 +31,13 @@ Your task is to fetch user data from the backend server and display it as user c
    ```
    cd frontend
    ```
-
 3. Install the dependencies:
    ```
    npm install
    ```
+
+4. Setup development configuration for app:
+   Copy and rename `.env.example` to `.env`. This file will be used to resolve api key to fetch users data from.
 
 ## Usage
 
